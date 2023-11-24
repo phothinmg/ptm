@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://esm.sh/gh/phothinmg/ptm@3404a1ee76/classless.css">
 ```
 ```css
-@import url("https://esm.sh/gh/phothinmg/ptm@3404a1ee76/classless.css");
+@import url(https://esm.sh/gh/phothinmg/ptm@3404a1ee76/classless.css);
 ```
 
 ---
