@@ -9,6 +9,7 @@ Table of Contents:
 */
 
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
+ @import url(https://cdn.jsdelivr.net/gh/phothinmg/burmese-font@main/index.css);
 
 
 :root, html[data-theme='light'] {
@@ -48,7 +49,7 @@ a, button, select, summary { color: var(--clink); cursor: pointer; }
 
 
 /* 3. Base Style ––––––––––––––––––––––––––––––––––––––– */
-html { font-size: var(--rem); background: var(--cbg); }
+html { font-size: var(--rem); background: var(--cbg); font-family: burmese !important; }
 body {
 	position: relative;
 	margin: auto;
