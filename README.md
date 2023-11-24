@@ -12,3 +12,11 @@
 ```
 
 ---
+
+#### Hljs Coppy Button 
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/hljsCopyBtn.js"></script>
+```
+
+---
