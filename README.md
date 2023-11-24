@@ -26,3 +26,12 @@
 ```html
  <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/themeSwitch.js"></script>
 ```
+---
+
+#### PTM CSS
+
+```html
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/ptm.css">
+```
+
+---
