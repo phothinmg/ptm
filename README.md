@@ -5,10 +5,10 @@
 #### Classless CSS
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/classless.css">
+<link rel="stylesheet" href="https://esm.sh/gh/phothinmg/ptm@3404a1ee76/classless.css">
 ```
 ```css
-@import url("https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/classless.css");
+@import url("https://esm.sh/gh/phothinmg/ptm@3404a1ee76/classless.css");
 ```
 
 ---
