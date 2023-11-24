@@ -1,15 +1,4 @@
-/* Classless.css v1.0
-
-Table of Contents:
- 1. Theme Settings
- 2. Reset
- 3. Base Style
- 4. Extras  (remove unwanted)
- 5. Classes  (remove unwanted)
-*/
-
-/* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
- @import url(https://cdn.jsdelivr.net/gh/phothinmg/burmese-font@main/index.css);
+@import url(https://cdn.jsdelivr.net/gh/phothinmg/burmese-font@main/index.css);
 
 
 :root, html[data-theme='light'] {
@@ -45,7 +34,8 @@ ul, ol, dl, fieldset, pre, pre > code, caption {
 video, summary, input, select { outline:none; }
 
 /* reset clickable things  (FF Bug: select:hover prevents usage) */
-a, button, select, summary { color: var(--clink); cursor: pointer; }
+a,select, summary { color: var(--clink); cursor: pointer; }
+button { color: var(--cbg); cursor: pointer; }
 
 
 /* 3. Base Style ––––––––––––––––––––––––––––––––––––––– */
@@ -54,7 +44,6 @@ body {
 	position: relative;
 	margin: auto;
 	max-width: var(--width);
-	font: var(--font-p);
 	color: var(--cfg);
 	padding: 3.0rem 0.6rem 0;
 	overflow-x: hidden;
@@ -296,7 +285,7 @@ textarea, input:not([type=range]), button, select {
 	border: 1.5px solid var(--cmed);
 	padding: 0.4em 0.8em;
 	color: var(--cfg);
-	background-color: var(--clight);
+	background-color: var(--cbg);
 }
 fieldset select, input:not([type=checkbox]):not([type=radio]) {
 	display: block;
