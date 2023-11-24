@@ -232,7 +232,6 @@ nav ul > li > ul {
 	position: absolute;
 	margin: 0.5rem 0;
 	padding: 1rem 2rem;
-	background-color: var(--clight);
 	border: var(--border);
 	border-radius: 4px;
 	z-index: 42;
@@ -240,7 +239,7 @@ nav ul > li > ul {
 nav ul > li > ul > li { white-space: nowrap; }
 nav ul > li:hover > ul { display: block; }
 @media (max-width: 40rem) {
-	nav ul:first-child > li:first-child:after { content: " \25BE"; }
+	nav ul:first-child > li:first-child:after { content: " ☰ "; }
 	nav ul:first-child > li:not(:first-child):not(.sticky) { display: none; }
 	nav ul:first-child:hover > li:not(:first-child):not(.sticky) { display: block; float: none !important; }
 }
