@@ -41,10 +41,15 @@
 ```html
  <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/converter.min.js"></script>
 ```
-**UMD**
+UMD
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/convert.min.js"></script>
+```
+```
+https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/converter.min.js
+
+https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/convert.min.js
 ```
 
 ---
