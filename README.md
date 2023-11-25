@@ -35,3 +35,16 @@
 ```
 
 ---
+
+#### Converter
+
+```html
+ <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/converter.min.js"></script>
+```
+**UMD**
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/converter/convert.min.js"></script>
+```
+
+---
