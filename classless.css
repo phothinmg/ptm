@@ -74,6 +74,10 @@ h5 { font-size: 1.2em; font-weight: 400; color: var(--cfg); }
 h6 { font-size: 1.0em; font-weight: 700; font-style: italic; display: inline; }
 h6 + p { display: inline; }
 
+h1,h2,h3,h4,h5,h6{
+	color: var(--cbg);
+}
+
 /* tables */
 td, th {
   padding: 0.5em 0.8em;
