@@ -1,7 +1,7 @@
 function td(){
     var a,theme
     a = document.getElementById('td');
-    theme = 'bootstrap';
+    theme = 'light';
     if (a.innerText == '☪'){
             a.innerText = '☀'; theme='dark';
         } else {
