@@ -1,3 +1,7 @@
+# phothinmg.github.io
+
+My personal site
+
 ## Developer setup — Ruby formatting
 
 This project uses `rufo` as the workspace Ruby formatter and `rubocop` for linting.
