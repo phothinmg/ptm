@@ -1,4 +1,3 @@
-destination: docs
 sass:
   style: compressed
 plugins:
