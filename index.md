@@ -1,0 +1,7 @@
+---
+layout: default
+title: Pho Thin
+---
+
+{% include about.html %}
+{% include projects.html %}

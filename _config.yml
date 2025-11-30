@@ -1,0 +1,13 @@
+destination: docs
+sass:
+  style: compressed
+plugins:
+  - jekyll-minifier
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - Makefile
+jekyll-minifier:
+  compress_css: false
+plugins_dir: plugins
