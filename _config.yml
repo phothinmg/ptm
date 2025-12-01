@@ -1,5 +1,4 @@
 url: https://phothinmg.github.io
-baseurl: /
 sass:
   style: compressed
 plugins:
@@ -7,8 +6,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-textile-converter
 exclude:
   - Makefile
 jekyll-minifier:
   compress_css: false
 plugins_dir: plugins
+textile_ext: "textile,txtl,tl"

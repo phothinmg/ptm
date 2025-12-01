@@ -321,12 +321,22 @@
   }
   const trs = citiesDayTime()
     .map((t) => {
-      return `<tr><td>${t.city}</td><td>${t.state}</td><td>${t.sunrise}</td><td>${t.sunset}</td><td>${t.daytime}</td></tr>`;
+      return `<tr><td data-label="City">${t.city}</td><td data-label="State/Region">${t.state}</td><td data-label="Sunrise">${t.sunrise}</td><td data-label="Sunset">${t.sunset}</td><td data-label="Day Length">${t.daytime}</td></tr>`;
     })
     .join("\n");
 
   const tbody = $.document.getElementById("suntime");
   if (tbody) {
     tbody.innerHTML = trs;
+  }
+  const today = $.document.getElementById("today");
+  const dateTime = new Date().toLocaleString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    weekday: "short",
+  });
+  if (today) {
+    today.innerHTML = dateTime;
   }
 })(window);
