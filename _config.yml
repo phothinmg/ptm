@@ -1,4 +1,6 @@
 url: https://phothinmg.github.io
+# site
+source: app
 sass:
   style: compressed
 plugins:
