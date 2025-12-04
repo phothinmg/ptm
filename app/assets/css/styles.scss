@@ -986,3 +986,18 @@ table td {
     font-weight: bold;
   }
 }
+
+.theme-btn {
+  background: inherit !important;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.theme-btn #theme-icon {
+  font-size: clamp(1.18rem, calc(1.13rem + 0.24vw), 1.32rem);
+  font-weight: 700;
+  color: var(--ptm-color-h1234);
+}
+.theme-btn:hover {
+  color: var(--ptm-color-anchor-hover);
+}
