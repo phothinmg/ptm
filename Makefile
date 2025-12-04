@@ -1,6 +1,6 @@
 SHELL := bash
 
-.PHONY: build serve format lint
+.PHONY: build serve format lint dev
 
 build:
 	JEKYLL_ENV=production bundle exec jekyll build
@@ -13,3 +13,6 @@ format:
 
 lint:
 	bundle exec rubocop
+
+dev:
+	bundle exec jekyll serve
