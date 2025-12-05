@@ -47,7 +47,7 @@
   --ptm-color-h56: #bababa;
   --ptm-color-header: #4c9bf0;
   /* Anchor */
-  --ptm-color-anchor: #278de0;
+  --ptm-color-anchor: #71b4eb;
   --ptm-color-anchor-hover: #ff9800;
   /* border */
   --ptm-color-border: #1a1a1a;
@@ -1000,4 +1000,8 @@ table td {
 }
 .theme-btn:hover {
   color: var(--ptm-color-anchor-hover);
+}
+
+.MathJax {
+  font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
 }

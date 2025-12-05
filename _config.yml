@@ -8,7 +8,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-textile-converter
+  - jekyll-spaceship
 exclude:
   - Makefile
 jekyll-minifier:
@@ -18,3 +18,23 @@ textile_ext: "textile,txtl,tl"
 collections:
   pages:
     output: true
+jekyll-spaceship:
+  processors:
+    - mathjax-processor
+  mathjax-processor:
+    src:
+      - https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js
+    config:
+      tex:
+        inlineMath:
+          - ["$", "$"]
+          - ['\(', '\)']
+        displayMath:
+          - ["$$", "$$"]
+          - ['\[', '\]']
+      svg:
+        fontCache: "global"
+    optimize: # optimization on building stage to check and add mathjax scripts
+      enabled: true # value `false` for adding to all pages
+      include: [] # include patterns for math expressions checking (regexp)
+      exclude: [] # exclude patterns for math expressions checking (regexp)

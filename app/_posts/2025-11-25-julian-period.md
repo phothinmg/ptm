@@ -5,37 +5,11 @@ author: Pho Thin
 
 ပြင်သစ်ပညာရှင် [Joseph Justus Scaliger][jjc](1540-1609) သည် နှစ်များကိုရေတွက်ရာတွင် [BC][Anno_Domini] [AD][Anno_Domini] တွေထည့်တွက်စရာမလိုသော နှစ်စဉ် အပေါင်းဂဏန်းတစ်ခု သတ်မှတ်ရန် စဥ်းစားခဲ့ပြီးယခုခေတ်လူသိများသော [Julian Period][julian_period]ကိုမိတ်ဆက်ခဲ့သည်။
 
-သူ၏[Julian Period][julian_period]သည် 4713 BCEဇန်နဝါရီလ 1 ရက်နေ့ UTCစံတော်ချိန် နေ့လည် 12 နာရီမှာ စတင်ပြီး နှစ်ပေါင်း 7980 ကြာမြင့်မည်ဖြစ်သည်။နှစ်ပေါင်း 7980 ကြာပြီးနောက်မှာ 1 ကနေ ပြန်စမည်ဖြစ်သည်။တစ်ကြိမ်လျင် နှစ်ပေါင်း 7980 ရအောင် [Solar cycle][solar_cycle] ,[Lunar cycle (Metonic cycle)][lunar_cycle] နှင့် ,[Indiction cycle][indiction_cycle]တို့အားအခြေခံပြီးအောက်ပါအတိုင်းတွက်ချက်ထားခြင်းဖြစ်သည်။ ယခုလိုတွက်ချက်ရခြင်း အကြောင်းအရင်းမှာ [BC][Anno_Domini] 4713 တွင် [Solar cycle][solar_cycle] ,[Lunar cycle (Metonic cycle)][lunar_cycle] နှင့် ,[Indiction cycle][indiction_cycle] တန်ဖိုးအားလုံး 1 ဖြစ်နေပီး နောက်တစ်ကြိမ် နှစ်ပေါင်း 7980 အကြာ [AD][Anno_Domini] 3268 တွင် ထပ်မံဖြစ်ပေါ်မည်ဖြစ်သောကြောင့်ဖြစ်သည်။
+သူ၏[Julian Period][julian_period]သည် 4713 BCEဇန်နဝါရီလ 1 ရက်နေ့ UTCစံတော်ချိန် နေ့လည် 12 နာရီမှာ စတင်ပြီး နှစ်ပေါင်း 7980 ကြာမြင့်မည်ဖြစ်သည်။နှစ်ပေါင်း 7980 ကြာပြီးနောက်မှာ 1 ကနေ ပြန်စမည်ဖြစ်သည်။တစ်ကြိမ်လျင် နှစ်ပေါင်း 7980 ရအောင် [Solar cycle][solar_cycle] ,[Lunar cycle (Metonic cycle)][lunar_cycle] နှင့် ,[Indiction cycle][indiction_cycle]တို့အားအခြေခံပြီးအောက်ပါအတိုင်းတွက်ချက်ထားခြင်းဖြစ်သည်။
 
-```text
-28 (solar cycle) × 19 (lunar cycle) × 15 (indiction cycle) = 7980 years
-```
+$ 28 \left(\text{solar cycle}\right) \times 19 \left(\text{lunar cycle}\right) \times 15 \left(\text{indiction cycle}\right) = 7980 \text{ years} $
 
-နှစ်တစ်နှစ်၏ လက်ရှိ Julian Period တွင် ရောက်ရှိနေသော နှစ်ပါင်းကိုသိရှိနိုင်ရန် အဆင့်ဆင့်တွက်ချက်သော JavaScript Function များအားအောက်တွင်ဖော်ပြထားပါသည်။
-
-```js
-// The position of the year within the 28 years  'Solar Cycle'.
-function solorNumber(year) {
-  return ((year + 8) % 28) + 1;
-}
-// The position of the year within the 19 years 'Lunar cycle (Metonic cycle)'.
-function lunarNumber(year) {
-  return (year % 19) + 1;
-}
-// The position of the year within the 15 years 'Indiction cycle (taxation cycle)'.
-function indictionNumber(year) {
-  return ((year + 2) % 15) + 1;
-}
-// The position of the year in current 'Julian Period'.
-function julianPeriodYear(year) {
-  return (
-    (6916 * indictionNumber(year) +
-      4200 * lunarNumber(year) +
-      4845 * solorNumber(year)) %
-    (15 * 19 * 28)
-  );
-}
-```
+ယခုလိုတွက်ချက်ရခြင်း အကြောင်းအရင်းမှာ [BC][Anno_Domini] 4713 တွင် [Solar cycle][solar_cycle] ,[Lunar cycle (Metonic cycle)][lunar_cycle] နှင့် ,[Indiction cycle][indiction_cycle] တန်ဖိုးအားလုံး 1 ဖြစ်နေပီး နောက်တစ်ကြိမ် နှစ်ပေါင်း 7980 အကြာ [AD][Anno_Domini] 3268 တွင် ထပ်မံဖြစ်ပေါ်မည်ဖြစ်သောကြောင့်ဖြစ်သည်။
 
 #### Julian Day And Julian Day Number
 

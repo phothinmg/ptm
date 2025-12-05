@@ -41,3 +41,17 @@ bundle exec rubocop
 VS Code settings
 
 The workspace is configured to use `rufo` on save. If you prefer another formatter, change the `ruby.format` setting in `.vscode/settings.json`.
+
+## Demo and test
+
+1. A demo page is included at `math-demo.md`. Build the site and open `http://localhost:4000/math-demo/` (or inspect `_site/math-demo/index.html`) to see MathJax injection.
+
+2. A quick test script is provided to build the site and assert MathJax was injected:
+
+```bash
+# make sure dependencies are installed
+bundle install
+
+# run the check (will run `bundle exec jekyll build` and inspect output)
+ruby script/check_math_injection.rb
+```
