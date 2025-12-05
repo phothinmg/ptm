@@ -15,3 +15,6 @@ jekyll-minifier:
   compress_css: false
 plugins_dir: plugins
 textile_ext: "textile,txtl,tl"
+collections:
+  pages:
+    output: true
