@@ -2,10 +2,10 @@
 
 require 'nokogiri'
 
+# module Jekyll
 module Jekyll
   DEFAULT_MATHJAX = {
     'src' => [
-      'https://polyfill.io/v3/polyfill.min.js?features=es6',
       'https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js'
     ],
     'config' => {
@@ -20,18 +20,21 @@ module Jekyll
     DEFAULT_MATHJAX.merge(site.config.fetch('mathjax', {}))
   end
 
-  def self.inject_mathjax_into(doc, cfg)
+  def self.inject_mathjax_into(doc, cfg) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
     return unless ['.html', '.htm'].include?(doc.output_ext)
     return if doc.output.nil? || doc.output.empty?
 
     # debug log
-    begin
-      require 'fileutils'
-      FileUtils.mkdir_p(File.join(Dir.pwd, 'tmp'))
-      File.open(File.join(Dir.pwd, 'tmp', 'mathjax_plugin.log'), 'a') do |f|
-        f.puts "hook invoked for: #{doc.respond_to?(:path) ? doc.path : doc.class}"
+    if ENV['JEKYLL_ENV'] != 'production'
+      begin
+        require 'fileutils'
+        FileUtils.mkdir_p(File.join(Dir.pwd, 'tmp'))
+        File.open(File.join(Dir.pwd, 'tmp', 'mathjax_plugin.log'), 'a') do |f|
+          f.puts "hook invoked for: #{doc.respond_to?(:path) ? doc.path : doc.class}"
+        end
+      rescue StandardError # rubocop:disable Lint/SuppressedException
       end
-    rescue StandardError
+
     end
 
     html = doc.output
@@ -61,7 +64,7 @@ module Jekyll
       File.open(File.join(Dir.pwd, 'tmp', 'mathjax_plugin.log'), 'a') do |f|
         f.puts "injected for: #{doc.respond_to?(:path) ? doc.path : doc.class}"
       end
-    rescue StandardError
+    rescue StandardError # rubocop:disable Lint/SuppressedException
     end
   rescue StandardError => e
     Jekyll.logger.warn 'MathJax plugin error:', e.message

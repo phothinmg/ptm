@@ -11,7 +11,6 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'jekyll-spaceship'
 end
 
 gem 'rufo', '~> 0.18.1', group: :development

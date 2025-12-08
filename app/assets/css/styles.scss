@@ -16,7 +16,7 @@
 :root {
   /* background */
   --ptm-bg: var(--ptm-light-png) #ffffff;
-  --ptm-bg2: var(--ptm-light-png) #ffffff;
+  --ptm-bg2: var(--ptm-light-png) #fafafa;
   --ptm-bg-inline-code: var(--ptm-light-png) #eeeeee;
   /* text */
   --ptm-color-text: #333333;
@@ -34,6 +34,7 @@
   --ptm-color-success: #88cc88;
   --ptm-color-warning: #cccc88;
   --ptm-color-error: #cc8888;
+  --ptm-color-primary: #0d6efd;
 }
 .dark,
 *[data-theme="dark"] {
@@ -57,6 +58,7 @@
   --ptm-color-success: #367236;
   --ptm-color-warning: #727236;
   --ptm-color-error: #723636;
+  --ptm-color-primary: #6294e0;
 }
 
 :root {
@@ -385,6 +387,8 @@ a:has(img):hover img {
 p a {
   margin-left: 5px;
   margin-right: 5px;
+  font-weight: 400;
+  color: var(--ptm-color-primary);
 }
 /* Others */
 b,
@@ -843,6 +847,9 @@ table td {
   padding: calc(var(--ptm-padding) * 0.72) var(--ptm-padding);
   font-family: var(--ptm-font-mono);
   border: var(--ptm-border);
+  overflow-x: auto;
+  margin: 1.12em auto;
+  max-width: 95%;
 }
 .highlight pre code {
   background: var(--ptm-bg);
@@ -1003,5 +1010,50 @@ table td {
 }
 
 .MathJax {
+  font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
+}
+
+div.blog {
+  padding: 18px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 18px;
+}
+div.blog div.blog-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background: var(--ptm-bg2);
+}
+
+div.blog div.blog-head h3 {
+  padding-top: 7px;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+div.blog div.blog-head p {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--ptm-color-h1234);
+  font-weight: 700;
+}
+div.blog div.blog-body h3 {
+  font-variant: small-caps;
+  padding-bottom: 5px;
+  max-width: fit-content;
+  border-bottom: var(--ptm-border);
+}
+div.blog div.blog-body h4 {
+  font-variant: small-caps;
+  padding-bottom: 5px;
+  max-width: fit-content;
+  border-bottom: var(--ptm-border);
+}
+div.blog div.blog-body p {
+  margin: 1.12em auto;
+  max-width: 95%;
+  font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
+}
+div.blog div.blog-body p .MathJax {
   font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
 }
