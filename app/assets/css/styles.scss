@@ -1057,3 +1057,22 @@ div.blog div.blog-body p {
 div.blog div.blog-body p .MathJax {
   font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
 }
+
+/* -------------------------------------------- blockquote -------------------- */
+
+div.blog div.blog-body blockquote {
+  padding: 1.5rem;
+  background: var(--ptm-bg2);
+  border-left: 5px solid var(--ptm-color-border);
+  margin: 1.12em auto;
+  max-width: 95%;
+}
+
+div.blog div.blog-body blockquote *:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+div.blog div.blog-body blockquote p {
+  font-style: italic;
+  color: var(--ptm-color-h1234);
+}
