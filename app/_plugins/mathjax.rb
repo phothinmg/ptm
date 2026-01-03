@@ -56,7 +56,7 @@ module Jekyll
 
     srcs = cfg['src']
     srcs = [srcs] if srcs.is_a?(String)
-    Array(srcs).each { |src| head.add_child(%(<script src="#{src}"></script>)) }
+    Array(srcs).each { |src| head.add_child(%(<script src="#{src}" defer></script>)) }
 
     doc.output = parsed.to_html
 
