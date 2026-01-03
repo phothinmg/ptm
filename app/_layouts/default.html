@@ -6,8 +6,15 @@
     <meta name="description" content="Personal Site" />
     <meta http-equiv="Cache-control" content="max-age=604800" />
     <link rel="preconnect" href="https://phothin.dev/" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net/" />
     <link rel="preload" href="/assets/css/styles.css" as="style" />
+    <!-- We want to initiate an early fetch for a resource, but also deprioritize it -->
+    <link
+      rel="preload"
+      href="https://phothin.dev/assets/js/ptm.js"
+      as="script"
+      fetchpriority="low"
+    />
+
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link
       rel="preload"
@@ -36,6 +43,6 @@
     {% include navigation.html %}
     <main>{{ content }}</main>
     {% include footer.html %} {% include top-btn.html %}
-    <script src="/assets/js/ptm.js"></script>
+    <script src="https://phothin.dev/assets/js/ptm.js"></script>
   </body>
 </html>
