@@ -8,7 +8,6 @@ gem 'nokogiri'
 gem 'pp'
 group :jekyll_plugins do
   gem 'jekyll-feed'
-  gem 'jekyll-minifier'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
 end
@@ -16,3 +15,7 @@ end
 gem 'rufo', '~> 0.18.1', group: :development
 
 gem 'rubocop', '~> 1.81', group: :development
+
+gem 'terser', '~> 1.2'
+
+gem 'logger', '~> 1.7'

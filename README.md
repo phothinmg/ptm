@@ -1,6 +1,4 @@
-# phothinmg.github.io
-
-My personal site
+# My personal site
 
 ## Developer setup — Ruby formatting
 
