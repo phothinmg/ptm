@@ -1,0 +1,25 @@
+---
+layout: default
+title: Myanmar states and regions SVG map.
+---
+
+<div class="map-container">
+  <div class="top">
+    <h3>States And Regions SVG Map</h3>
+  </div>
+  <div class="flex-container">
+    <div class="column left">
+      <label for="lang">Display Lang</label>
+      <select name="lang" id="lang">
+        <option value="en">English</option>
+        <option value="mm">Burmese</option>
+      </select>
+    </div>
+    <div id="snr" class="column right"></div>
+  </div>
+</div>
+<div id="custom-tooltip"></div>
+<script src="/assets/js/geodata/d3.js"></script>
+<script src="/assets/js/geodata/snr_data.js"></script>
+<script src="/assets/js/geodata/snr.js"></script>
+<script src="/assets/js/geodata/svgToolip.js"></script>

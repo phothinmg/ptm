@@ -14,27 +14,11 @@ collections:
     output: true
   notes:
     output: true
-
-# Configuration for the terser plugin (app/_plugins/terser.rb)
 terser:
-  # Enable or disable minification
-  enabled: true
-
-  # Source directory (relative to site source). Defaults tried by plugin are
-  # `assets/js` and `app/assets/js` when not set.
-  # Example: app/assets/js
-  # source_dir: app/assets/js
-
-  # Output directory path relative to site destination (default: assets/js)
-  output_dir: assets/js
-
-  # Compression and mangling options
-  compress: true
-  mangle: true
-
-  # Generate source maps (true/false)
-  source_map: true
-
-  # Exclude patterns (globs relative to source_dir)
+  enabled: true # disable to skip minification
+  output_dir: assets/js # destination directory under site dest
+  compress: true # enable compression
+  mangle: true # enable name mangling
+  source_map: true # produce .map files
   exclude:
-    - "**/*.min.js"
+    - "**/*.min.js" # glob patterns (relative to source dir) to skip

@@ -53,3 +53,22 @@ bundle install
 # run the check (will run `bundle exec jekyll build` and inspect output)
 ruby script/check_math_injection.rb
 ```
+
+## Terser plugin (JS minification)
+
+A small Jekyll plugin is included to minify JavaScript sources and emit source maps during site builds.
+
+- Plugin file: `_plugins/terser.rb`
+- Source JS: `app/assets/js` (or `assets/js` depending on your layout)
+- Output: `_site/assets/js` by default (configurable)
+
+Configuration (in `_config.yml` under the `terser:` key):
+
+- `enabled` (boolean, default: `true`) — enable/disable minification
+- `output_dir` (string, default: `assets/js`) — relative path under the site destination
+- `compress` (boolean, default: `true`) — enable terser compression
+- `mangle` (boolean, default: `true`) — enable name mangling
+- `source_map` (boolean, default: `true`) — produce `.map` files
+- `exclude` (array of glob patterns) — files to skip (default: `['**/*.min.js']`)
+
+The plugin uses the `terser` Ruby gem when available; if not present it will try an external `terser` CLI (`bundle exec terser` or `terser`). Minification runs after Jekyll writes files so generated minified files and `.map` files are not overwritten.
