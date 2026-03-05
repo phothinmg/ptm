@@ -1,0 +1,228 @@
+---
+---
+
+/* Icons */
+i {
+  font-family: "tabler-icons" !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: clamp(1.29rem, calc(1.2rem + 0.41vw), 1.51rem);
+  color: inherit !important;
+}
+
+/* Brand */
+i.apple:before {
+  content: "\ef21";
+}
+i.github:before {
+  content: "\ec1c";
+}
+i.bitbucket:before {
+  content: "\edc7";
+}
+i.blogger:before {
+  content: "\f35a";
+}
+i.bluesky:before {
+  content: "\fd75";
+}
+i.bootstrap:before {
+  content: "\ef3e";
+}
+i.bulma:before {
+  content: "\f327";
+}
+i.c-sharp:before {
+  content: "\f003";
+}
+i.chrome:before {
+  content: "\ec18";
+}
+i.cloudflare:before {
+  content: "\fa4e";
+}
+i.codecov:before {
+  content: "\f329";
+}
+i.codepen:before {
+  content: "\ec6f";
+}
+i.codesandbox:before {
+  content: "\ed6a";
+}
+i.cpp:before {
+  content: "\f5fe";
+}
+i.css3:before {
+  content: "\ed6b";
+}
+i.debian:before {
+  content: "\ef57";
+}
+i.deno:before {
+  content: "\f24f";
+}
+i.discord:before {
+  content: "\ece3";
+}
+i.disney:before {
+  content: "\f20a";
+}
+i.disqus:before {
+  content: "\edc9";
+}
+i.django:before {
+  content: "\f349";
+}
+i.docker:before {
+  content: "\edca";
+}
+i.facebook:before {
+  content: "\ec1a";
+}
+i.figma:before {
+  content: "\ec93";
+}
+i.firebase:before {
+  content: "\ef6e";
+}
+i.firefox:before {
+  content: "\ecfd";
+}
+i.git:before {
+  content: "\ef6f";
+}
+i.github:before {
+  content: "\ec1c";
+}
+i.github-copilot:before {
+  content: "\f4a8";
+}
+i.gitlab:before {
+  content: "\ec1d";
+}
+i.gmail:before {
+  content: "\efa2";
+}
+i.golang:before {
+  content: "\f78d";
+}
+i.google:before {
+  content: "\ec1f";
+}
+i.google-drive:before {
+  content: "\ec1e";
+}
+i.html5:before {
+  content: "\ed6c";
+}
+i.instagram:before {
+  content: "\ec20";
+}
+i.javascript:before {
+  content: "\ef0c";
+}
+i.kotlin:before {
+  content: "\ed6d";
+}
+i.laravel:before {
+  content: "\f34b";
+}
+i.linkedin:before {
+  content: "\ec8c";
+}
+i.medium:before {
+  content: "\ec70";
+}
+i.messenger:before {
+  content: "\ec71";
+}
+i.nextjs:before {
+  content: "\f0dd";
+}
+i.nodejs:before {
+  content: "\fae0";
+}
+i.notion:before {
+  content: "\ef7b";
+}
+i.npm:before {
+  content: "\f569";
+}
+i.nuxt:before {
+  content: "\f0de";
+}
+i.tailwind:before {
+  content: "\eca1";
+}
+i.telegram:before {
+  content: "\ec26";
+}
+i.threads:before {
+  content: "\fb02";
+}
+i.tiktok:before {
+  content: "\ec73";
+}
+i.typescript:before {
+  content: "\f5f1";
+}
+i.vercel:before {
+  content: "\ef24";
+}
+i.vite:before {
+  content: "\f5f2";
+}
+i.vscode:before {
+  content: "\f3a0";
+}
+i.vue:before {
+  content: "\f0e0";
+}
+i.wordpress:before {
+  content: "\f2d3";
+}
+i.x:before {
+  content: "\fc0f";
+}
+i.yarn:before {
+  content: "\fd79";
+}
+i.youtube:before {
+  content: "\ec90";
+}
+/* utilities */
+i.mail:before {
+  content: "\eae5";
+}
+i.arrow-up:before {
+  content: "\f63c";
+}
+i.download:before {
+  content: "\ea96";
+}
+i.upload:before {
+  content: "\eb47";
+}
+/* Copy */
+i.copy:before {
+  content: "\ea6f";
+}
+i.copy-check:before {
+  content: "\ea6c";
+}
+i.copy-error:before {
+  content: "\ea6e";
+}
+i.sun:before {
+  content: "\eb30";
+}
+i.moon:before {
+  content: "\eaf8";
+}

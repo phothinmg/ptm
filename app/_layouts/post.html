@@ -2,10 +2,15 @@
 layout: default
 ---
 
-<div class="blog">
-  <div class="blog-head">
+<head>
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+  </title>
+</head>
+<div class="markdown">
+  <div class="markdown-head">
     <h3>{{ page.title }}</h3>
     <p>{{ page.date | date_to_string }}</p>
   </div>
-  <div class="blog-body">{{ content }}</div>
+  <div class="markdown-body">{{ content }}</div>
 </div>

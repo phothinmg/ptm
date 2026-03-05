@@ -2,9 +2,14 @@
 layout: default
 ---
 
-<div class="blog">
-  <div class="blog-head">
+<head>
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+  </title>
+</head>
+<div class="markdown">
+  <div class="markdown-head">
     <h3>{{ page.title }}</h3>
   </div>
-  <div class="blog-body">{{ content }}</div>
+  <div class="markdown-body">{{ content }}</div>
 </div>

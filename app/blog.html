@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Notes
+title: Blog
 ---
 
-<h1>Notes</h1>
+<head>
+  <title>Blog | {{ site.title }}</title>
+</head>
+<h1>Latest Posts</h1>
 <ol>
-  {% for post in site.notes %}
+  {% for post in site.blog %}
   <li>
     <a href="{{ post.url}}" style="font-size: 20px">{{ post.title }}</a>
   </li>

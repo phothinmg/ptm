@@ -1,0 +1,84 @@
+<!-- Markdown css -->
+<link rel="preload" href="/assets/css/markdown.css" as="style" />
+<link rel="stylesheet" href="/assets/css/markdown.css" />
+<!-- End Markdown css -->
+<!-- Rouge css -->
+<!-- 
+1. Jekyll provides built-in syntax highlighting using the Rouge highlighter by default.
+This is CSS for Rough  highlighter modified by me to support light/dark mode.
+
+2. You can generate GitHub's default highlighting CSS using the rougify command in your terminal 
+and add a CSS file to your project:
+
+rougify style github > _out_.css 
+
+replace _out_ with name/path as you want.
+
+3. Disabling Highlighting: If you want to use a client-side JavaScript library (like highlight.js or Prism) 
+instead of Jekyll's built-in method, you must disable Jekyll's syntax highlighting in your _config.yml file:
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+4. Rouge supports both  Markdown fenced code blocks or Liquid highlight tags .
+
+```ruby
+# Example Ruby code
+def say_hello(name)
+  puts "Hello, #{name}!"
+end
+
+say_hello("Jekyll user")
+```
+
+{% highlight html linenos %}
+<div>
+  This is some preformatted HTML code with line numbers.
+</div>
+{% endhighlight %}
+ -->
+<link rel="preload" href="/assets/css/rouge.css" as="style" />
+<link rel="stylesheet" href="/assets/css/rouge.css" />
+<!--  End Rouge css -->
+
+<!-- MathJax  -->
+<!-- 
+1. This approach is lightweight and works well with GitHub Pages, as it doesn't require a custom plugin build and 
+relies on a simple script include.Using https for the CDN is important for security and compatibility.
+
+2. Ensure your Jekyll site is using kramdown as the markdown engine, which is the default for GitHub Pages.
+
+_config.yml file:
+markdown: kramdown
+
+3. Write equations in Markdown: 
+
+  - Inline math: Wrap your equation in single dollar signs or \\( and \\) (e.g., $ E = mc^2 $ or \\( E = mc^2 \\)).
+  - Display math (centered, block): Use double dollar signs or \\[ and \\] (e.g., $$ E = mc^2 $$ or \\[ E = mc^2 \\]).
+
+4. Handle Markdown conflicts: Be aware that Markdown syntax (like underscores for italics) can conflict with TeX syntax. 
+You may need to escape special characters with a backslash ( \_ instead of _ ) or wrap the math in <span>...</span> tags 
+to prevent Markdown interference. Alternatively, using {% raw %} and {% endraw %} Liquid tags can disable Jekyll processing 
+within an area, though this may work best in .html files. 
+ -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+      displayMath: [
+        ["$$", "$$"],
+        ["\\[", "\\]"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+<!-- End MathJax  -->

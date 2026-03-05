@@ -1,57 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal Site" />
-    <meta http-equiv="Cache-control" content="max-age=604800" />
-    <!-- global css -->
-    <link rel="preload" href="/assets/css/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link
-      rel="preload"
-      fetchpriority="high"
-      as="image"
-      href="/assets/images/kadown.min.svg"
-      type="image/svg+xml"
-    />
-
-    <!-- Preload image end -->
-    <!-- Icons -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/favicon/android-chrome-512x512.png"
-      sizes="512x512"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/favicon/android-chrome-192x192.png"
-      sizes="192x192"
-    />
-    <!-- <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" /> -->
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <!-- Icons end -->
-    <!-- Load plugins -->
+    {% include head.html %}
+    <!-- Favicons -->
+    {% include favicons.html %}
+    <!-- Markdown -->
+    {% include md.html %}
+    <!-- Jekyll Plugin -->
     {% feed_meta %} {% seo %}
   </head>
   <body>

@@ -14,7 +14,7 @@ description: >
       target="_blank"
       rel="noopener noreferrer"
     >
-      <strong>Dr. Yan Naing Aye</strong>
+      <strong>Dr.Yan Naing Aye</strong>
     </a>
     for Burmese calendar calculations and
     <a

@@ -10,9 +10,7 @@ description: >
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD041 -->
 <div align="center">
-<img src="https://susee.phothin.dev/logo/susee.webp" width="160" height="160" alt="susee" />
-  <h1>susee</h1>
-</div>
+<img src="https://susee.phothin.dev/logo/susee.webp" width="160" height="160" alt="susee" /></div>
 <!-- markdownlint-enable MD033 -->
 
 [![npm version](https://img.shields.io/npm/v/susee)](https://www.npmjs.com/package/susee) [![license](https://img.shields.io/npm/l/susee)](LICENSE)
@@ -82,7 +80,7 @@ Execute the bundler using one of these methods:
 
 with `npx` :
 
-```bash
+```shell
 npx susee
 ```
 
@@ -96,13 +94,13 @@ via `package.json` :
 }
 ```
 
-```bash
+```shell
 npm run build
 ```
 
 for global :
 
-```bash
+```shell
 susee
 ```
 
@@ -217,7 +215,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow, pull request c
 
 - Build and run tests with the repo scripts (see `package.json`):
 
-```bash
+```shell
+
 npm run build
 npm test
+
 ```

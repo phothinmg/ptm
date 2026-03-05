@@ -1,6 +1,9 @@
 url: https://phothin.dev
 # site
+title: Pho Thin
+description: Personal Site
 source: app
+markdown: kramdown
 sass:
   style: compressed
 plugins:
@@ -12,7 +15,7 @@ exclude:
 collections:
   pages:
     output: true
-  notes:
+  blog:
     output: true
   projects:
     output: true
