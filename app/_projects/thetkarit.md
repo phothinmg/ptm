@@ -1,31 +1,12 @@
 ---
 layout: project
 title: Thetkarit
-github: https://github.com/phothinmg/thetkarit
-npm: https://github.com/phothinmg/thetkarit
-description: >
-  <p>
-    A dual-implementation library (TypeScript/JavaScript and C++) for Burmese
-    calendar calculations and astronomical studies. The library focuses on
-    historical accuracy through exception tables and implements astronomical
-    algorithms based on the work of
-    <a
-      href="https://scholar.google.com/citations?user=MOmTzIwAAAAJ&hl=en"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <strong>Dr.Yan Naing Aye</strong>
-    </a>
-    for Burmese calendar calculations and
-    <a
-      href="https://en.wikipedia.org/wiki/Jean_Meeus"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <strong>Jean Meeus</strong>
-    </a>
-    for celestial mechanics.
-  </p>
+github: https://github.com/phothinmg/thetkarits
+image: https://pub-c9ba018358dd48a99b70013b65a25e5f.r2.dev/logo/thetkarit.webp
+languages:
+  - typescript
+  - c++
+summary: A library for Burmese calendar calculations and astronomical studies.
 ---
 
 [![CMake on multiple platforms](https://github.com/phothinmg/thetkarit/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/phothinmg/thetkarit/actions/workflows/cmake-multi-platform.yml)

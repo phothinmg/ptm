@@ -159,9 +159,9 @@ code,
 samp,
 kbd,
 pre {
-  background: var(--ptm-bg-inline-code);
-  border: var(--ptm-border);
-  border-radius: 4px;
+  // background: var(--ptm-bg-inline-code);
+  // border: var(--ptm-border);
+  // border-radius: 4px;
   padding: 3px 6px;
   font-size: calc(clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem) * 0.9);
 }
@@ -170,16 +170,16 @@ kbd {
   /* Makes the kbd element look like a keyboard key */
   border-bottom: 3px solid var(--ptm-color-border);
 }
-p code {
-  color: var(--ptm-color-h56);
-  font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
-  font-weight: 400;
-  padding: 3px 6px;
-  margin-left: 3px;
-  margin-right: 3px;
-  border-radius: 5px;
-  background: var(--ptm-bg-inline-code);
-}
+// p code {
+//   color: var(--ptm-color-h56);
+//   font-size: clamp(0.85rem, 0.7897rem + 0.2804vw, 1rem);
+//   font-weight: 400;
+//   // padding: 3px 6px;
+//   // margin-left: 3px;
+//   // margin-right: 3px;
+//   // border-radius: 5px;
+//   // background: var(--ptm-bg-inline-code);
+// }
 /* Anchor */
 a {
   color: var(--ptm-color-anchor);

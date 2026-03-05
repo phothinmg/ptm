@@ -3,8 +3,11 @@ layout: project
 title: Susee
 github: https://github.com/phothinmg/susee
 npm: https://www.npmjs.com/package/susee
-description: >
-  Susee is a TypeScript bundler that processes a package's local dependency tree and emits compiled artifacts in multiple module formats. Unlike general-purpose bundlers that target browser environments or bundle node_modules, susee focuses on library authorship: it collates local TypeScript files, merges them into cohesive bundles, compiles them through the TypeScript compiler, and generates properly formatted outputs for consumption as npm packages.
+image: https://pub-c9ba018358dd48a99b70013b65a25e5f.r2.dev/logo/susee.webp
+languages:
+  - typescript
+  - node.js
+summary: A tiny TypeScript bundler that emits compiled artifacts in multiple module formats.
 ---
 
 <!-- markdownlint-disable MD033 -->

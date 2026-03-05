@@ -35,6 +35,8 @@
   --ptm-color-warning: #cccc88;
   --ptm-color-error: #cc8888;
   --ptm-color-primary: #0d6efd;
+  /* Box Shadow*/
+  --ptm-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .dark,
 *[data-theme="dark"] {
@@ -59,12 +61,15 @@
   --ptm-color-warning: #727236;
   --ptm-color-error: #723636;
   --ptm-color-primary: #6294e0;
+  /* Box Shadow*/
+  --ptm-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 :root {
   /* Others Def */
   --ptm-max-width: 70rem;
   --ptm-padding: clamp(1.6rem, 2vw, 3rem);
+  --ptm-transition: all 0.3s ease;
 }
 /* ------------------------------------------------------------------------------------------------- */
 /* Basic  */
