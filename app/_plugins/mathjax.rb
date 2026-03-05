@@ -6,7 +6,7 @@ require 'nokogiri'
 module Jekyll
   DEFAULT_MATHJAX = {
     'src' => [
-      'https://phothin.dev/assets/js/mathjax.js'
+      'https://cdn.phothin.dev/js/mathjax.js'
     ],
     'config' => {
       'tex' => {

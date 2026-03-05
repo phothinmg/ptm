@@ -19,5 +19,6 @@
     "useBundler": true,
     "lintOnSave": true,
     "config": ".rubocop.yml"
-  }
+  },
+  "cSpell.words": ["Mathjax", "Meeus", "Naing", "rubocop", "rufo"]
 }

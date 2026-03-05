@@ -14,6 +14,8 @@ collections:
     output: true
   notes:
     output: true
+  projects:
+    output: true
 terser:
   enabled: true # disable to skip minification
   output_dir: assets/js # destination directory under site dest
