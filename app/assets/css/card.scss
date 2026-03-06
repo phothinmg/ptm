@@ -7,10 +7,13 @@
   gap: 30px;
 }
 .card {
-  background: var(--ptm-bg);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--ptm-shadow);
+  background: var(--ptm-bg);
+}
+.card *:last-child {
+  margin-bottom: 0;
 }
 .card-image {
   height: 200px;

@@ -5,9 +5,9 @@ title: Projects
 
 <section id="projects" class="section">
   <div class="container">
-    <h2 class="section-title">My Projects</h2>
-    <div class="card-container">
-      {% for project in site.projects %}
+    <h2 class="section-title">Projects</h2>
+    <div class="card-container" id="pel">
+      {% for project in site.data.projects %}
       <div class="card">
         <div class="card-image">
           <img src="{{ project.image}}" alt="{{ project.title }}" />

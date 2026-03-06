@@ -1,0 +1,9 @@
+- title: Susee
+  github: https://github.com/phothinmg/susee
+  npm: https://www.npmjs.com/package/susee
+  image: https://susee.phothin.dev/logo/susee.webp
+  summary: A tiny TypeScript bundler that emits compiled artifacts in multiple module formats.
+- title: Thetkarit
+  github: https://github.com/phothinmg/thetkarits
+  image: https://susee.phothin.dev/logo/thetkarit.webp
+  summary: A library for Burmese calendar calculations and astronomical studies.
