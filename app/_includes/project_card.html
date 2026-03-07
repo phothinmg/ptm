@@ -1,25 +1,20 @@
----
-layout: default
-title: Projects
----
-
-<head>
-  <link rel="preload" href="/css/project_card.css" as="style" />
-  <link rel="stylesheet" href="/css/project_card.css" />
-</head>
-
 <section id="projects" class="section">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <div class="section-title-container">
+      <h2 class="section-title">Projects</h2>
+      <a href="/projects" class="view-all" title="view-all-projects"
+        >View All</a
+      >
+    </div>
     <div class="project-container" id="pel">
-      {% for project in site.data.projects %}
+      {% for project in site.data.projects limit:3 %}
       <div class="project-card">
         <div class="project-info">
           <h3>{{ project.title }}</h3>
           <div class="summary">
             <p>{{project.summary}}</p>
           </div>
-          <div class="project-badge">
+          <div class="badge">
             <a
               href="{{ project.github }}"
               aria-label="{{ project.title }}"

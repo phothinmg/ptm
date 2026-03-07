@@ -1,6 +1,6 @@
 SHELL := bash
 
-.PHONY: build serve format lint dev
+.PHONY: build serve format lint dev install
 
 build:
 	JEKYLL_ENV=production bundle exec jekyll build
@@ -16,3 +16,7 @@ lint:
 
 dev:
 	bundle exec jekyll serve
+
+install:
+	bundle install
+	

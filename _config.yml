@@ -1,7 +1,6 @@
 url: https://phothin.dev
 # site
 title: Pho Thin
-description: Personal Site
 source: app
 markdown: kramdown
 sass:

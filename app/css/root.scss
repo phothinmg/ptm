@@ -1,0 +1,113 @@
+---
+---
+
+:root {
+  --ptm-light-png: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQIW2NgYODjBWJWKOZgQOKwQDAKByLAgSTACQAp6QE8mK8aTgAAAABJRU5ErkJggg==);
+  --ptm-dark-png: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAAKklEQVR4AWNgYIgzBEMGEGSAMqA0mIq2jgbSWGXR9MJhpFOkE0MkDIK5AEjQFP2LwcU5AAAAAElFTkSuQmCC);
+}
+:root {
+  /* background */
+  --ptm-bg: var(--ptm-light-png) #ffffff;
+  --ptm-bg2: var(--ptm-light-png) #fafafa;
+  --ptm-bg-inline-code: var(--ptm-light-png) #eeeeee;
+  /* text */
+  --ptm-color-text: #333333;
+  --ptm-color-h1234: #555555;
+  --ptm-color-h56: #444444;
+  --ptm-color-header: #055dbb;
+  /* Anchor */
+  --ptm-color-anchor: #0050ef;
+  --ptm-color-anchor-hover: #ce3500;
+  /* border */
+  --ptm-color-border: #ededed;
+  --ptm-border: 1px solid #cccccc;
+  /* Box Color */
+  --ptm-color-info: #f4f4f4;
+  --ptm-color-success: #88cc88;
+  --ptm-color-warning: #cccc88;
+  --ptm-color-error: #cc8888;
+  --ptm-color-primary: #0d6efd;
+  /* Box Shadow*/
+  --ptm-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* Rouge css */
+  --cb-hll: #ffffcc;
+  --cb-comment: #146114;
+  --cb-err: #a61717;
+  --cb-err-bg: #e3d2d2;
+  --cb-blk: #000000;
+  --cb-gd-bg: #ffdddd;
+  --cb-gi-bg: #ddffdd;
+  --cb-sgroup: #d01040;
+  --cb-vgroup: #008080;
+  --cb-mgroup: #009999;
+  --cb-ngroup: #990000;
+  --cb-ggroup: #aa0000;
+  --cb-kcnt: #445588;
+  --cb-gpnn: #555555;
+  --cb-go: #888888;
+  --cb-gu: #aaaaaa;
+  --cb-nd: #3c5d5d;
+  --cb-ni: #800080;
+  --cb-nt: #000080;
+  --cb-w: #bbbbbb;
+  --cb-sr: #009926;
+  --cb-ss: #990073;
+  --cb-bp: #999999;
+}
+.dark,
+*[data-theme="dark"] {
+  /* background */
+  --ptm-bg: var(--ptm-dark-png) #000000;
+  --ptm-bg2: var(--ptm-dark-png) #0a0a01;
+  --ptm-bg-inline-code: var(--ptm-dark-png) #121212;
+  /* text */
+  --ptm-color-text: #cccccc;
+  --ptm-color-h1234: #ababab;
+  --ptm-color-h56: #bababa;
+  --ptm-color-header: #4c9bf0;
+  /* Anchor */
+  --ptm-color-anchor: #71b4eb;
+  --ptm-color-anchor-hover: #ff9800;
+  /* border */
+  --ptm-color-border: #1a1a1a;
+  --ptm-border: 1px solid #333333;
+  /* Box Color */
+  --ptm-color-info: #f4f4f4;
+  --ptm-color-success: #367236;
+  --ptm-color-warning: #727236;
+  --ptm-color-error: #723636;
+  --ptm-color-primary: #6294e0;
+  /* Box Shadow*/
+  --ptm-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  /* Rouge css */
+  --cb-hll: #303003;
+  --cb-comment: #a2e7a2;
+  --cb-err: #e16060;
+  --cb-err-bg: #2b1c1c;
+  --cb-blk: #ffffff;
+  --cb-gd-bg: #220202;
+  --cb-gi-bg: #022202;
+  --cb-sgroup: #e53864;
+  --cb-vgroup: #86f9f9;
+  --cb-mgroup: #6ef7f7;
+  --cb-ngroup: #f76e6e;
+  --cb-ggroup: #f75f5f;
+  --cb-kcnt: #7a8ab8;
+  --cb-gpnn: #ababab;
+  --cb-go: #787878;
+  --cb-gu: #545454;
+  --cb-nd: #a4c1c1;
+  --cb-ni: #f986f9;
+  --cb-nt: #8686f9;
+  --cb-w: #454545;
+  --cb-sr: #6ef790;
+  --cb-ss: #f76ed5;
+  --cb-bp: #666666;
+}
+
+:root {
+  /* Others Def */
+  --ptm-max-width: 70rem;
+  --ptm-padding: clamp(1.6rem, 2vw, 3rem);
+  --ptm-transition: all 0.3s ease;
+}

@@ -4,7 +4,7 @@
   "description": "This project uses `rufo` as the workspace Ruby formatter and `rubocop` for linting.",
   "main": "a.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "image": "node local/pimage.js"
   },
   "repository": {
     "type": "git",

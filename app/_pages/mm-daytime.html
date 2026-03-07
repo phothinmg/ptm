@@ -7,7 +7,7 @@ title: Sunrise and sunset times for capitals of states and regions in Myanmar
   <h3>
     Sunrise and sunset times for capitals of states and regions in Myanmar
   </h3>
-  <p id="today"></p>
+  <p>Today : {{ site.data.mm_daytime.today }}</p>
   <table>
     <thead>
       <tr>
@@ -18,7 +18,16 @@ title: Sunrise and sunset times for capitals of states and regions in Myanmar
         <th scope="col">Day Length</th>
       </tr>
     </thead>
-    <tbody id="suntime"></tbody>
+    <tbody>
+      {% for row in site.data.mm_daytime.rows %}
+      <tr>
+        <td data-label="City">{{ row.city }}</td>
+        <td data-label="State/Region">{{ row.state }}</td>
+        <td data-label="Sunrise">{{ row.sunrise }}</td>
+        <td data-label="Sunset">{{ row.sunset }}</td>
+        <td data-label="Day Length">{{ row.daytime }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
   </table>
 </div>
-<script src="/js/suntime.js"></script>

@@ -29,18 +29,15 @@
             const stored = localStorage.getItem(ptmLocalStoreTheme);
             if (stored === "dark" || stored === "light") {
                 applyTheme(stored);
-                toogleIconClass(stored);
             } else {
                 const defaultTheme = prefersDarkMode ? "dark" : "light";
                 localStorage.setItem(ptmLocalStoreTheme, defaultTheme);
                 applyTheme(defaultTheme);
-                toogleIconClass(defaultTheme);
             }
         } catch (e) {
             // If access to localStorage is blocked, fall back to default theme only
             const defaultTheme = prefersDarkMode ? "dark" : "light";
             applyTheme(defaultTheme);
-            toogleIconClass(defaultTheme);
         }
     })();
 
@@ -52,7 +49,6 @@
             const newTheme = current === "dark" ? "light" : "dark";
             localStorage.setItem(ptmLocalStoreTheme, newTheme);
             applyTheme(newTheme);
-            toogleIconClass(newTheme);
         });
     })();
     // ----------------------------------------
