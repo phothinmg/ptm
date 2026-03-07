@@ -7,9 +7,13 @@ title: Pho Thin
   <div class="about-content">
     <div class="about-image">
       <img
-        src="https://phothin.dev/cdn-cgi/image/width=63,quality=75/assets/images/logo.webp"
+        src="/images/logo.webp"
         alt="Profile Image"
         fetchpriority="high"
+        ,
+        width="300"
+        ,
+        height="300"
       />
     </div>
     <div class="about-text">
@@ -34,3 +38,62 @@ title: Pho Thin
     </div>
   </div>
 </div>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="card-container" id="pel">
+      {% for project in site.data.projects limit:3 %}
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="{{ project.image}}"
+            alt="{{ project.title }}"
+            fetchpriority="high"
+            width="300"
+            height="200"
+          />
+        </div>
+        <div class="card-info">
+          <h3>{{ project.title }}</h3>
+          <div class="description">
+            <p>{{project.summary}}</p>
+          </div>
+          <div class="badge">
+            <a
+              href="{{ project.github }}"
+              aria-label="{{ project.title }}"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                alt="Static Badge"
+                src="https://img.shields.io/badge/SourceCode-gray?style=flat&logo=github"
+                width="97"
+                height="20"
+                fetchpriority="high"
+              />
+            </a>
+            {% if project.npm %}
+            <a
+              href="{{ project.npm }}"
+              aria-label="{{ project.title }}"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                alt="Static Badge"
+                src="https://img.shields.io/badge/npm-package-red?style=flat&logo=npm"
+                width="107"
+                height="20"
+                fetchpriority="high"
+              />
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

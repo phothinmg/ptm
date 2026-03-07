@@ -1,0 +1,28 @@
+{
+  "name": "ptm",
+  "version": "1.0.0",
+  "description": "This project uses `rufo` as the workspace Ruby formatter and `rubocop` for linting.",
+  "main": "a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phothinmg/ptm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phothinmg/ptm/issues"
+  },
+  "homepage": "https://github.com/phothinmg/ptm#readme",
+  "dependencies": {
+    "@phothinmaung/resolves": "^1.0.0",
+    "ptimage": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}

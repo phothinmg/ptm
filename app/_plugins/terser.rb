@@ -23,8 +23,8 @@ module Jekyll
     def self.run(site) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength,Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity
       # Support both repository-root layout and app/ layout.
       candidates = [
-        File.join(site.source, 'assets', 'js'),
-        File.join(site.source, 'app', 'assets', 'js')
+        File.join(site.source, 'js'),
+        File.join(site.source, 'app', 'js')
       ]
       src_dir = candidates.find { |p| Dir.exist?(p) }
       return unless src_dir
@@ -33,7 +33,7 @@ module Jekyll
       cfg = site.config.fetch('terser', {})
       return if cfg.key?('enabled') && cfg['enabled'] == false
 
-      dest_dir = File.join(site.dest, cfg.fetch('output_dir', 'assets/js'))
+      dest_dir = File.join(site.dest, cfg.fetch('output_dir', 'js'))
       FileUtils.mkdir_p(dest_dir)
 
       terser_available = defined?(Terser)
